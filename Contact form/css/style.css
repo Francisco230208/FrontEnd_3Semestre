@@ -255,3 +255,18 @@ body {
         padding: 10px;
     }
 }
+@media screen and (max-width: 900px){
+
+    .form-contact__col-a{
+        display: none;
+    }
+
+    .form-contact__col-b{
+        width: 100%;
+    }
+
+    .form-contact__linha,
+    .form-contact__linha2{
+        flex-direction: column;
+    }
+}
