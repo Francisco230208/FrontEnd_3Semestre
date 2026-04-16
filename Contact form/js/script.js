@@ -14,6 +14,9 @@ function validarFormulario() {
     let numero = document.getElementById("numero").value;
     let cidade = document.getElementById("cidade").value;
     let estado = document.getElementById("estado").value;
+    let complemento = document.getElementById("complemento").value;
+    let bairro = document.getElementById("bairro").value;
+    let anotacoes = document.getElementById("anotacoes").value;
 
     // parte do NOME 
     if (nome.trim() === "") {
@@ -100,6 +103,26 @@ function validarFormulario() {
         reiniciaBorda("estado");
     }
 
+    if (complemento.trim() === "") {
+        formError("complemento");
+        quantidadeErro++;
+    } else {
+        reiniciaBorda("complemento");
+    }               
+
+    if (bairro.trim() === "") {
+        formError("bairro");
+        quantidadeErro++;
+    } else {
+        reiniciaBorda("bairro");
+    }
+
+   if (anotacoes.trim() === "") {
+        formError("anotacoes");
+        quantidadeErro++;
+    } else {
+        reiniciaBorda("anotacoes");
+    }
     
     if (quantidadeErro > 0) {
         alert("Existem " + quantidadeErro + " campo(s) com erro, por favor verifique!");
