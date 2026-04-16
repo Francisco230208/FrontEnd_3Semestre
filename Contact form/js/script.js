@@ -1,3 +1,68 @@
+/**
+ *  Esta função recebe os dados do formulário em um objeto javascritp
+    e em seguida chama a api para cadastrar
+  */ 
+ async function cadastrarContato(objetoContato) {
+    console.log(objetoContato);
+
+    //chamar a api com o fetch
+    const resposta = await fetch("http://localhost:3000/contatos", 
+{
+    method: "POST",
+    body: JSON.stringify(objetoContato),//converte o objeto javascript em JSON
+    headers:{
+        "Content-Type": "application/json; charset=utf-8" //informar que o corpo da requisição é um JSON
+    }
+});
+
+
+}
+    
+// ==================== BUSCAR ENDEREÇO PELO CEP =================
+async function buscarEndereco(cep) {
+    // alert("Função rodando");
+    // return false;
+
+    if (cep.trim().length < 8) {
+        alert("O CEP deve conter 8 números");
+        return false;
+    }
+    //buscar o cep
+    
+    try {
+        aguardandoCampos();
+        let retorno = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+        let dados = await retorno.json();
+        console.log(dados);
+        console.log(dados.logradouro);
+        console.log(dados.bairro);
+        console.log(dados.localidade);
+        console.log(dados.uf);
+        console.log(dados.complemento);
+        
+        document.getElementById("rua").value = dados.logradouro;
+        document.getElementById("bairro").value = dados.bairro;
+        document.getElementById("cidade").value = dados.localidade;
+        document.getElementById("estado").value = dados.uf;
+        document.getElementById("complemento").value = dados.complemento;
+      
+    }
+    catch (error) {
+        return false;
+    }
+
+
+    function aguardandoCampos(){
+        document.getElementById("rua").value = "Aguardando...";
+        document.getElementById("bairro").value = "Aguardando...";
+        document.getElementById("cidade").value = "Aguardando...";
+        document.getElementById("estado").value = "Aguardando...";
+        // document.getElementById("complemento").value = "Aguardando...";
+    }
+}
+
+
+// ================= VALIDAÇÃO DO FORMULÁRIO =================
 function validarFormulario() {
     let quantidadeErro = 0;
 
@@ -67,7 +132,7 @@ function validarFormulario() {
 
 
     // ENDEREÇO
-    
+
     if (cep.trim().length < 8) {
         formError("cep");
         quantidadeErro++;
@@ -108,7 +173,7 @@ function validarFormulario() {
         quantidadeErro++;
     } else {
         reiniciaBorda("complemento");
-    }               
+    }
 
     if (bairro.trim() === "") {
         formError("bairro");
@@ -117,19 +182,45 @@ function validarFormulario() {
         reiniciaBorda("bairro");
     }
 
-   if (anotacoes.trim() === "") {
+    if (anotacoes.trim() === "") {
         formError("anotacoes");
         quantidadeErro++;
     } else {
         reiniciaBorda("anotacoes");
     }
-    
+
+
+
+
+    // hora de cadastrar
     if (quantidadeErro > 0) {
         alert("Existem " + quantidadeErro + " campo(s) com erro, por favor verifique!");
     } else {
         alert("Formulário enviado com sucesso!");
         reiniciaTodasAsBordas();
     }
+
+    //Gerar objeto de contato
+    let objetoContato = {
+        nome: nome,
+        sobrenome: sobrenome,
+        email: email,
+        telefone: `${telPais}${telDDD}${telNumero}`,
+        cep: cep,
+        rua: rua,
+        numero: numero,
+        cidade: cidade,
+        estado: estado,
+        complemento: complemento,
+        bairro: bairro,
+        anotacoes: anotacoes
+    };
+
+    let cadastrado = cadastrarContato(objetoContato);
+
+    // alert("Cadastrado com sucesso!");
+    reiniciaTodasAsBordas();
+
 }
 
 
