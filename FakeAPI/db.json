@@ -1,0 +1,75 @@
+{
+  "usuarios": [
+    {
+      "nome": "Marcos Vinicius MAurivan Junior",
+      "email": "Maurivan@gmail.com",
+      "id": "1"
+    },
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "idade": 30,
+      "id": "VRvi8LHWYGQ"
+    },
+    {
+      "name": "Gustavinho",
+      "email": "Gustavinho@gmail.com",
+      "idade": 18,
+      "id": "EXTP8V7MNV0"
+    },
+    {
+      "name": "Bruno",
+      "email": "BrunoFadorex@gmail.com",
+      "idade": 17,
+      "id": "DFkoiBmVTd0"
+    }
+  ],
+  "frutas": [
+    {
+      "id": "1",
+      "nome": "Maçã",
+      "preco": 3.5
+    },
+    {
+      "id": "2",
+      "nome": "Banana",
+      "preco": 2
+    }
+  ],
+  "jogos": [
+    {
+      "id": "1",
+      "titulo": "The Legend of Zelda: Breath of the Wild",
+      "genero": "Ação/Aventura"
+    },
+    {
+      "id": "2",
+      "titulo": "Super Mario Odyssey",
+      "genero": "Plataforma"
+    }
+  ],
+  "Post": [
+    {
+      "id": "1",
+      "titulo": "Meu primeiro post",
+      "descricao": "Este é o conteúdo do meu primeiro post.",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTJFr_dM-3IFMPkBh-2C9pETZ0jz6GLashpQ&s",
+      "curtidas": 5
+    },
+    {
+      "id": "2",
+      "titulo": "Outro post interessante",
+      "descricao": "Aqui está o conteúdo de outro post interessante.",
+      "foto": "https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg",
+      "curtidas": 10
+    },
+    {
+      "titulo": "POst do gusta",
+      "descricao": "gustaShow",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg47eFlV8rWKN494sIElBLRwG4en1L_Y1fkw&s",
+      "curtidas": 320,
+      "id": "HTjqiSLWvSQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
