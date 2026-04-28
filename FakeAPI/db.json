@@ -161,5 +161,63 @@
       "id": "akd15iGzIyU"
     }
   ],
+  "calculadora": [
+    {
+      "numero1": 12,
+      "numero2": 12,
+      "operacao": "soma",
+      "resultado": "24.00",
+      "id": "fWLXGYEjm-0"
+    },
+    {
+      "numero1": 15,
+      "numero2": 15,
+      "operacao": "soma",
+      "resultado": "30.00",
+      "id": "5ztYtWqU7mE"
+    },
+    {
+      "numero1": 12,
+      "numero2": 14,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "nhr-EqwWmSQ"
+    },
+    {
+      "numero1": 14,
+      "numero2": 14,
+      "operacao": "subtracao",
+      "resultado": "0.00",
+      "id": "PTgVaINIsbw"
+    },
+    {
+      "numero1": 2,
+      "numero2": null,
+      "operacao": "",
+      "resultado": "Operação Inválida",
+      "id": "Tu8xcxrm7q8"
+    },
+    {
+      "numero1": 3,
+      "numero2": 2,
+      "operacao": "soma",
+      "resultado": "5.00",
+      "id": "48WACnO6TME"
+    },
+    {
+      "numero1": 2,
+      "numero2": 4,
+      "operacao": "subtracao",
+      "resultado": "-2.00",
+      "id": "9gTzmOA397U"
+    },
+    {
+      "numero1": 8,
+      "numero2": 0,
+      "operacao": "subtracao",
+      "resultado": "8.00",
+      "id": "a75c9fuP2rg"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
