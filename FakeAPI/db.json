@@ -71,5 +71,95 @@
       "id": "HTjqiSLWvSQ"
     }
   ],
+  "imc": [
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "_EdfrH1qY9o"
+    },
+    {
+      "nome": "lucas",
+      "altura": 1.85,
+      "peso": 70,
+      "imc": 20.45288531775018,
+      "situacao": "Saudável",
+      "id": "FmToc2bLGHM"
+    },
+    {
+      "nome": "Joao",
+      "altura": 1.67,
+      "peso": 70,
+      "imc": 25.099501595611173,
+      "situacao": "Sobrepeso",
+      "id": "dx-bIbAVQVs"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "A8JybBhDsG0"
+    },
+    {
+      "nome": "Francisco Hugo",
+      "altura": 1.71,
+      "peso": 63,
+      "imc": 21.545090797168363,
+      "situacao": "Saudável",
+      "id": "HPmaRpgwC_o"
+    },
+    {
+      "nome": "Akice",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "HArYOu4kGr0"
+    },
+    {
+      "nome": "bruno",
+      "altura": 2.5,
+      "peso": 301,
+      "imc": 48.16,
+      "situacao": "Obesidade Grau III (considerada mórbida)",
+      "id": "fNbMUoJx-RU"
+    },
+    {
+      "nome": "carlos",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "lpFazAx6vLE"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "Trtv4QayEwc"
+    },
+    {
+      "nome": "eeduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "BZQ_xWe2IQ8"
+    },
+    {
+      "nome": "u",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "akd15iGzIyU"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
